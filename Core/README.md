@@ -1,0 +1,21 @@
+# ChronoscopeCore
+
+Foundation-only Swift package for dated, source-backed historical events, vector similarity, route search, and bounded SQLite corpus reads. The product and import module are `ChronoscopeCore`.
+
+Dates are astronomical decimal years in the proleptic Gregorian calendar: `0` means 1 BCE; `-43` means 44 BCE; `1` means 1 CE. The civil-date API rejects year zero. Fractional years encode day-of-year divided by the length of that year. Event intervals overlap a viewport when `start <= upperBound && end >= lowerBound`.
+
+`AtlasGraph` traverses source relationships in either direction and records when traversal reverses a documented edge. `wikiLink` indicates an article hyperlink. `wikidata` indicates the relationship described by its label and evidence. Neither kind automatically proves causation. `semantic` edges represent actual cosine similarity and explicitly make no causal claim. Stored semantic scores are never used in place of vectors.
+
+`shortestPath` performs breadth-first search, accepts 1–7 hops, returns no result for disconnected/unknown topics, and caps visited nodes. In-memory paths use persisted semantic candidates after verifying their actual vector cosine; a missing neighborhood may fall back to a vector scan. The default path deadline is 15 seconds and task cancellation stops searches between nodes. `semanticNeighbors` still computes global cosine neighbors over the loaded catalog. `AtlasCatalogStore.shortestPathResult` distinguishes no route from a search budget limit; its default 15-second deadline also interrupts long SQLite scans and candidate decoding. All SQLite reads honor Swift task cancellation through query progress callbacks and checks between materialized records. SQLite semantic queries use a deterministic sparse LSH index (16 tables, 8 sign bits, 8 signed dimensions per hyperplane), merge stored semantic candidates, and rerank by exact cosine. The candidate limit bounds the total number of decoded candidate vectors from both sources (256 for paths, 1024 by default for focus neighbors). Candidate retrieval is approximate and independent of the timeline viewport; it is not an exhaustive nearest-neighbor query. Native and Python exporters share the versioned `sparse-xorshift32-v1-16x8x8` algorithm and a cross-language golden fixture.
+
+The SQLite store retains `AtlasEvent` JSON in `events.payload`, indexes interval/category queries, and uses FTS5 for search. Viewport queries and snapshots have bounded results. Snapshot edges are fetched directly between the materialized endpoints and capped at 20,000, with any truncation stated in coverage; indexed route searches remain independent of that view. Whole-corpus counts use completed metadata when the viewport contains the full indexed interval. Corpus metadata lives in `metadata(key,value)` and accepts plain text or JSON-encoded strings. `events_fts(id,title,summary)` uses `unicode61` tokenization. Imported event IDs must be unique, time intervals valid, vector values finite, and every edge endpoint present.
+
+Call `validateIndex()` before accepting an external SQLite index. It scans scalar date/edge fields and endpoint IDs, validates schema version and completed counts, and remains cancellable without loading every event vector. JSON payloads are validated on materialization, including dates, coordinates, finite vector values and consistent dimensions. Indexed record limits are 1 MiB per event, 4096 vector dimensions, 64 KiB per connection, and 1 MiB total metadata. A standalone read-only database should be checkpointed and finalized in DELETE journal mode before distributing its single file; WAL files can require sidecars even when their contents were checkpointed.
+
+Run verification with:
+
+```sh
+CLANG_MODULE_CACHE_PATH=/tmp/chronoscope-core-clang SWIFT_MODULECACHE_PATH=/tmp/chronoscope-core-swift swift test --disable-sandbox
+```
+
+Tests cover route direction and source evidence, seven-hop limits, missing paths, cosine math, malformed vectors, BCE transitions, leap days, interval overlap, SQLite search/snapshots, metadata, malformed indexed dates/payloads, transactional import validation, candidate budgets, task cancellation, portable read-only snapshots, and explicit search budgets.

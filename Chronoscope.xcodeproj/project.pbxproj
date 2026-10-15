@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335A5AC99FC55DB93D4A80E6 /* SpatialAtlasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67638050A214E1481A51A736 /* SpatialAtlasView.swift */; };
+		39052B4C241AAF38EC6E1CC9 /* TimelineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57613A74F4F2BF3DC1E1544 /* TimelineControl.swift */; };
+		65D9D16F6284E3684626BF6D /* AtlasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B371D7D2706D5AFF88F5D9 /* AtlasView.swift */; };
+		6E7E87962802D4743B331AB9 /* ChronoscopeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02D382DF5FCC06737710ABD7 /* ChronoscopeCore */; };
+		7110E17BC19FFD9321625B3C /* AtlasAnalogControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D757CF1B8A1F9AE58726B0 /* AtlasAnalogControl.swift */; };
+		A1D2603BC9FA32B815418786 /* ChronoscopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C457922A56805E6087F663 /* ChronoscopeApp.swift */; };
+		A28213CA6842E1F16544C498 /* AtlasTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A222C697AF2DCB2E195563 /* AtlasTheme.swift */; };
+		A941EA44E1AC2C90ADC84FDA /* CatalogDeploymentReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EFD57C0F78E3FB53FC2795 /* CatalogDeploymentReceipt.swift */; };
+		B6F63317425FB0A80A51C39B /* AtlasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29913953E99D8607EDCC946 /* AtlasModel.swift */; };
+		D9D626702040051C8CBCCE7A /* WikipediaBridgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49859126B12ECE20FE616970 /* WikipediaBridgeService.swift */; };
+		DA122E02941251CD114885E6 /* CorpusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACF2432348FEF5765F96D1 /* CorpusView.swift */; };
+		DC9331752138D8B1264EDE24 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6145D4218C8B1C4052EF0 /* catalog.json */; };
+		F335A9DA7EDD3A96D2A5833E /* BridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FD8766D3F4A9790DD517C /* BridgeView.swift */; };
+		F75E750E6D3C147BB48E0EC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FD3AC2F23452D22AB65F50 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18FD3AC2F23452D22AB65F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A3FD8766D3F4A9790DD517C /* BridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeView.swift; sourceTree = "<group>"; };
+		1CB6145D4218C8B1C4052EF0 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
+		20CE903C148365FD93FB508F /* Chronoscope.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chronoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B371D7D2706D5AFF88F5D9 /* AtlasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasView.swift; sourceTree = "<group>"; };
+		49859126B12ECE20FE616970 /* WikipediaBridgeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaBridgeService.swift; sourceTree = "<group>"; };
+		4FACF2432348FEF5765F96D1 /* CorpusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorpusView.swift; sourceTree = "<group>"; };
+		67638050A214E1481A51A736 /* SpatialAtlasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAtlasView.swift; sourceTree = "<group>"; };
+		A2A222C697AF2DCB2E195563 /* AtlasTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasTheme.swift; sourceTree = "<group>"; };
+		A57613A74F4F2BF3DC1E1544 /* TimelineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineControl.swift; sourceTree = "<group>"; };
+		D29913953E99D8607EDCC946 /* AtlasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasModel.swift; sourceTree = "<group>"; };
+		D7950DBC990B179FA867931B /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Core; sourceTree = SOURCE_ROOT; };
+		E6D757CF1B8A1F9AE58726B0 /* AtlasAnalogControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasAnalogControl.swift; sourceTree = "<group>"; };
+		F2C457922A56805E6087F663 /* ChronoscopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronoscopeApp.swift; sourceTree = "<group>"; };
+		F8EFD57C0F78E3FB53FC2795 /* CatalogDeploymentReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDeploymentReceipt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18085F00E6A72160F3722C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E87962802D4743B331AB9 /* ChronoscopeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056BA50AA37DF6143DF133D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6D757CF1B8A1F9AE58726B0 /* AtlasAnalogControl.swift */,
+				A2A222C697AF2DCB2E195563 /* AtlasTheme.swift */,
+				31B371D7D2706D5AFF88F5D9 /* AtlasView.swift */,
+				1A3FD8766D3F4A9790DD517C /* BridgeView.swift */,
+				4FACF2432348FEF5765F96D1 /* CorpusView.swift */,
+				67638050A214E1481A51A736 /* SpatialAtlasView.swift */,
+				A57613A74F4F2BF3DC1E1544 /* TimelineControl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7152BA317059F825EA6A738B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D7950DBC990B179FA867931B /* Core */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		895386A525C6A7D28DF73661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20CE903C148365FD93FB508F /* Chronoscope.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96EFB87EB0DA8965702EB501 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18FD3AC2F23452D22AB65F50 /* Assets.xcassets */,
+				D29913953E99D8607EDCC946 /* AtlasModel.swift */,
+				F8EFD57C0F78E3FB53FC2795 /* CatalogDeploymentReceipt.swift */,
+				F2C457922A56805E6087F663 /* ChronoscopeApp.swift */,
+				49859126B12ECE20FE616970 /* WikipediaBridgeService.swift */,
+				056BA50AA37DF6143DF133D8 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A7250D97FC42B20E553E2574 = {
+			isa = PBXGroup;
+			children = (
+				96EFB87EB0DA8965702EB501 /* App */,
+				7152BA317059F825EA6A738B /* Packages */,
+				D9F6CB852283F19A935920B7 /* Resources */,
+				895386A525C6A7D28DF73661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F6CB852283F19A935920B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6145D4218C8B1C4052EF0 /* catalog.json */,
+			);
+			name = Resources;
+			path = App/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7FB541C96696BFC8F92448E /* Chronoscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FADD8996BC8C0C3E0B2467 /* Build configuration list for PBXNativeTarget "Chronoscope" */;
+			buildPhases = (
+				B15D38FE92BDF32774914F94 /* Sources */,
+				FD7AD4419C9500857333A3AA /* Resources */,
+				18085F00E6A72160F3722C1A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chronoscope;
+			packageProductDependencies = (
+				02D382DF5FCC06737710ABD7 /* ChronoscopeCore */,
+			);
+			productName = Chronoscope;
+			productReference = 20CE903C148365FD93FB508F /* Chronoscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFC4AE1201C7EA57F60CA7FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A7FB541C96696BFC8F92448E = {
+
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C6384AC6878A467F29D12736 /* Build configuration list for PBXProject "Chronoscope" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A7250D97FC42B20E553E2574;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				70F445B631584CBDB0B692EE /* XCLocalSwiftPackageReference "Core" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 895386A525C6A7D28DF73661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7FB541C96696BFC8F92448E /* Chronoscope */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD7AD4419C9500857333A3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75E750E6D3C147BB48E0EC0 /* Assets.xcassets in Resources */,
+				DC9331752138D8B1264EDE24 /* catalog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15D38FE92BDF32774914F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7110E17BC19FFD9321625B3C /* AtlasAnalogControl.swift in Sources */,
+				B6F63317425FB0A80A51C39B /* AtlasModel.swift in Sources */,
+				A28213CA6842E1F16544C498 /* AtlasTheme.swift in Sources */,
+				65D9D16F6284E3684626BF6D /* AtlasView.swift in Sources */,
+				F335A9DA7EDD3A96D2A5833E /* BridgeView.swift in Sources */,
+				A941EA44E1AC2C90ADC84FDA /* CatalogDeploymentReceipt.swift in Sources */,
+				A1D2603BC9FA32B815418786 /* ChronoscopeApp.swift in Sources */,
+				DA122E02941251CD114885E6 /* CorpusView.swift in Sources */,
+				335A5AC99FC55DB93D4A80E6 /* SpatialAtlasView.swift in Sources */,
+				39052B4C241AAF38EC6E1CC9 /* TimelineControl.swift in Sources */,
+				D9D626702040051C8CBCCE7A /* WikipediaBridgeService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2E2C484F230D2D995A6B1FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "App/Info-iOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.chronoscope.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7052BDAB7D6882CA4CBB358C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "App/Info-iOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.chronoscope.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		83EEC8820B8135C1CBB7FA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		DC484D3D08B19516AA7405AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83FADD8996BC8C0C3E0B2467 /* Build configuration list for PBXNativeTarget "Chronoscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7052BDAB7D6882CA4CBB358C /* Debug */,
+				2E2C484F230D2D995A6B1FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6384AC6878A467F29D12736 /* Build configuration list for PBXProject "Chronoscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC484D3D08B19516AA7405AF /* Debug */,
+				83EEC8820B8135C1CBB7FA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		70F445B631584CBDB0B692EE /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02D382DF5FCC06737710ABD7 /* ChronoscopeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChronoscopeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DFC4AE1201C7EA57F60CA7FE /* Project object */;
+}
